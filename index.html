@@ -14,11 +14,19 @@
             <li><a href="#home">Rana<span
                 style="color: yellow;font-weight: bolder;">.</span></a></li>
         </ul>
-        <ul id="navigate">
+        <ul id="sidebar">
+            <li onclick="HideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#skills">skills</a></li>
             <li><a href="#projects">projects</a></li>
             <li><a href="#resume">resume</a></li> 
+        </ul>
+        <ul id="navigate">
+            <li class="hideOnMobile"><a href="#about">about</a></li>
+            <li class="hideOnMobile"><a href="#skills">skills</a></li>
+            <li class="hideOnMobile"><a href="#projects">projects</a></li>
+            <li class="hideOnMobile"><a href="#resume">resume</a></li> 
+            <li id="menu-button" onclick= ShowSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M360-200v-80h480v80H360Zm0-240v-80h480v80H360Zm0-240v-80h480v80H360ZM200-160q-33 0-56.5-23.5T120-240q0-33 23.5-56.5T200-320q33 0 56.5 23.5T280-240q0 33-23.5 56.5T200-160Zm0-240q-33 0-56.5-23.5T120-480q0-33 23.5-56.5T200-560q33 0 56.5 23.5T280-480q0 33-23.5 56.5T200-400Zm0-240q-33 0-56.5-23.5T120-720q0-33 23.5-56.5T200-800q33 0 56.5 23.5T280-720q0 33-23.5 56.5T200-640Z"/></svg></a></li>
         </ul>
     </div>
     <div class="about" id="#home">
@@ -45,6 +53,14 @@
         <h2></h2>
     </div>
     <script>
+        function ShowSidebar(){
+            const sidebar = document.querySelector('#sidebar');
+            sidebar.style.display= 'flex';
+        }
+        function HideSidebar(){
+            const sidebar = document.querySelector('#sidebar');
+            sidebar.style.display= 'none';
+        }
         ScrollReveal({
             reset: true,
             distance: '60px',
