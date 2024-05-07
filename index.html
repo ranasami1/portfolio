@@ -4,11 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>  
     <title>My Portfolio</title>
 </head>
 <body>
-    
+    <div class="header">
+        <ul class="logo">
+            <li><a href="#home">Rana<span
+                style="color: yellow;font-weight: bolder;">.</span></a></li>
+        </ul>
+        <ul id="navigate">
+            <li><a href="#about">about</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#services">services</a></li> 
+        </ul>
+    </div>
+    <div class="about" id="#home">
+        <div class="about-container">
+            <div class="about-sec1">
+                <h2>I am Rana Sami, a front-end web developer.</h2>
+                <p>Graduated in 2022, I am proficient in web front-end development
+                    You can view my profile and request the service you want from the available services.</p>
+            </div>
+            <div class="about-sec2">
+                <img id="me" src="./asset/WhatsApp Image 2024-05-01 at 17.30.32_315ba67c.jpg">
+            </div>
+        </div>
+        <div class="icons">
+            <div class="content">
+                <li><a href="https://www.facebook.com/rana.sami.5832/"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/rana.sami.1/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ranasami11/"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="mailto:ranasami237@gmail.com"><i class="fab fa-google"></i></a></li>
+            </div>
+        </div>
+    </div>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay:400
+        });
+        ScrollReveal().reveal('#me',{delay: 500 ,origin: "right"});
+        ScrollReveal().reveal('.about-sec1 h2, .about-sec1 p',{delay: 500 ,origin: "left"});
+        ScrollReveal().reveal('.content a i',{delay: 500,origin: "bottom", interval: 300});
+    </script>
     
 </body>
 </html>

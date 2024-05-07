@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    text-transform: capitalize;
+}
+html{
+    scroll-behavior: smooth;
+    background-color: #111222;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.header, .about{
+    margin: 30px 50px;
+    display: flex;
+    align-items: center;
+}
+.header .logo{
+    list-style-type: none;
+    font-weight: bolder;
+    font-size: larger; 
+}
+.header #navigate{
+    display: flex;
+    list-style-type: none; 
+    margin-left: auto;
+}
+.header a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: #ffff;
+}
+.about{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.about .about-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 90%;
+    margin: auto;
+    
+}
+.about .about-container .about-sec1 h2{
+    color: #ffffffcc;
+}
+.about .about-container .about-sec1 p{
+    max-width: 500px;
+    color: yellow;
+    line-height: 30px;
+}
+.about .about-container .about-sec2 img{
+    max-width: 300px;
+    border-radius: 10px;
+    border: 2px solid #ffffffcc ;
+}
+.icons{
+    margin:40px auto;
+}
+.icons .content{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: auto;
+    
+}
+.content li a{
+    margin:20px;
+    font-size: 30px;
+    color: #ffffffcc;
+}
