@@ -61,7 +61,7 @@ body{
     }
 }
 @media(max-width:400px){
-    #sidebar{
+    .header #sidebar{
         width:100%;
     }
 }
