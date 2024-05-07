@@ -59,8 +59,8 @@ body{
     line-height: 30px;
 }
 .about .about-container .about-sec2 img{
-    max-width: 300px;
-    border-radius: 10px;
+    max-width: 350px;
+    border-radius: 50%;
     border: 2px solid #ffffffcc ;
 }
 .icons{
