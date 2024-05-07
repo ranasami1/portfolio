@@ -15,7 +15,7 @@ body{
     flex-direction: column;
     gap: 100px;
 }
-.header, .about{
+.header, .about, #skills{
     margin: 30px 50px;
     display: flex;
     align-items: center;
