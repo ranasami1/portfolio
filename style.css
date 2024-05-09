@@ -29,7 +29,7 @@ body {
 .header .logo {
     list-style-type: none;
     font-weight: bolder;
-    font-size: larger;
+    font-size:x-large;
 }
 
 .header #sidebar {
