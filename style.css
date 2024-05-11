@@ -29,7 +29,7 @@ body {
 .header .logo {
     list-style-type: none;
     font-weight: bolder;
-    font-size:x-large;
+    font-size: x-large;
 }
 
 .header #sidebar {
@@ -63,7 +63,7 @@ body {
     display: none;
 }
 
-@media(max-width:800px) {
+@media(max-width:768px) {
     .hideOnMobile {
         display: none;
     }
@@ -110,7 +110,7 @@ body {
 
 #main-text {
     color: #ffffffcc;
-    margin: 10px 0 20px  0;
+    margin: 10px 0 20px 0;
 }
 
 .about .about-container .about-sec1 p {
@@ -218,4 +218,61 @@ body {
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
+}
+.projects{
+    height: auto;
+    padding: 20px 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+#project{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#resume{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 200px;
+}
+#download{
+    background-image: linear-gradient(45deg, #F27121, #E94057);
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+}
+#download a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #111222;
+}
+.up{
+    position:fixed;
+    height: 40px;
+    width: 40px;
+    bottom: 32px;
+    right: 20px;
+    background-image: linear-gradient(45deg, #F27121, #E94057);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50%;
+    opacity: 0;
+    transition:all .4s;
+    pointer-events: none;
+}
+.up.upButtom{
+    opacity:1;
+    bottom: 32px;
+    pointer-events: all;
 }

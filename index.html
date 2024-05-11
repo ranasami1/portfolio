@@ -21,23 +21,23 @@
                         <path
                             d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                     </svg></a></li>
-            
+
             <li onclick="HideSidebar()"><a href="#skills">skills</a></li>
             <li onclick="HideSidebar()"><a href="#projects">projects</a></li>
             <li onclick="HideSidebar()"><a href="#resume">resume</a></li>
         </ul>
-        <ul id="navigate"> 
+        <ul id="navigate">
             <li class="hideOnMobile"><a href="#skills">skills</a></li>
             <li class="hideOnMobile"><a href="#projects">projects</a></li>
             <li class="hideOnMobile"><a href="#resume">resume</a></li>
-            <li id="menu-button" onclick=ShowSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                        viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <li id="menu-button" onclick="ShowSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
                         <path
                             d="M360-200v-80h480v80H360Zm0-240v-80h480v80H360Zm0-240v-80h480v80H360ZM200-160q-33 0-56.5-23.5T120-240q0-33 23.5-56.5T200-320q33 0 56.5 23.5T280-240q0 33-23.5 56.5T200-160Zm0-240q-33 0-56.5-23.5T120-480q0-33 23.5-56.5T200-560q33 0 56.5 23.5T280-480q0 33-23.5 56.5T200-400Zm0-240q-33 0-56.5-23.5T120-720q0-33 23.5-56.5T200-800q33 0 56.5 23.5T280-720q0 33-23.5 56.5T200-640Z" />
                     </svg></a></li>
         </ul>
     </div>
-    <div class="about" id="#home">
+    <div class="about" id="home">
         <div class="about-container">
             <div class="about-sec1">
                 <h2 id="main-text">I am Rana Sami, a front-end web developer.</h2>
@@ -57,6 +57,13 @@
             </div>
         </div>
     </div>
+
+    <!--to top buttom-->
+    <a class="up" href="#navigate"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+            width="30px" fill="#111222">
+            <path d="m296-345-56-56 240-240 240 240-56 56-184-184-184 184Z" />
+        </svg></a>
+
     <div id="skills">
         <h1 id="main-text">technical skills</h1>
         <section class="design-section">
@@ -67,7 +74,7 @@
                     <div class="timeline-circle"></div>
                 </div>
                 <div class="timeline-component timeline-content">
-                    <h3>HTML</h3> 
+                    <h3>HTML</h3>
                 </div>
                 <div class="timeline-component timeline-content">
                     <h3>CSS</h3>
@@ -146,12 +153,19 @@
                 <div class="timeline-middle">
                     <div class="timeline-circle"></div>
                 </div>
-                
+
         </section>
     </div>
     <div class="projects">
-       
+        <h1 id="main-text">Projects</h1>
+        <div id="project">
 
+        </div>
+    </div>
+    <div id="resume">
+        <h3 id="main-text">download my resume</h3>
+        <button id="download" type="button"><a href="./resume/Rana Samy_Software Engineer (2).pdf"
+                download="">Download</a></button>
     </div>
     <script>
         function ShowSidebar() {
@@ -172,6 +186,16 @@
         ScrollReveal().reveal('#main-text, .about-sec1 p', { delay: 500, origin: "left" });
         ScrollReveal().reveal('.content a i', { delay: 500, origin: "bottom", interval: 200 });
         ScrollReveal().reveal('.timeline-component', { delay: 500, origin: "bottom", interval: 150 });
+
+        const toTop = document.querySelector(".up");
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset> 100) {
+                toTop.classList.add("upButtom");
+            }
+            else{
+                toTop.classList.remove("upButtom");
+            }
+        })
     </script>
 
 </body>
