@@ -21,7 +21,7 @@ body {
 
 .header,
 .about,
-#skills ,footer{
+#skills{
     margin: 30px 60px;
     display: flex;
     align-items: center;
@@ -276,32 +276,4 @@ body {
     opacity:1;
     bottom: 40px;
     pointer-events: all;
-}
-.footer{
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    height: 60px;
-    border-top: #ffffff77 .4px solid;
-   
-}
-.footer .logo li a,.footer .social li a{
-    margin: 10px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bolder;
-}
-.footer .logo{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    list-style-type: none;
-    padding: 0 10px;
-}
-.footer .social li {
-    list-style-type:none;
-}
-.footer .social {
-    display: flex;
-    padding: 0 10px;
 }
