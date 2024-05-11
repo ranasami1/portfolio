@@ -16,11 +16,12 @@ html {
 body {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .header,
 .about,
-#skills {
+#skills ,footer{
     margin: 30px 60px;
     display: flex;
     align-items: center;
@@ -280,11 +281,9 @@ body {
     display: flex;
     align-items: center;
     justify-content:space-between;
-    width: 100%;
     height: 60px;
-    padding: 10px 0;
-    border-top: #ffffffa6 .4px solid;
-    overflow: hidden;
+    border-top: #ffffff77 .4px solid;
+   
 }
 .footer .logo li a,.footer .social li a{
     margin: 10px;
