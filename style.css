@@ -290,6 +290,7 @@ body {
 .footer ul{
     list-style-type: none;
     display: flex;
+    margin: 0 40px;
 }
 .footer ul  li a{
     text-decoration: none;
