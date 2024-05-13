@@ -11,6 +11,7 @@
 html {
     scroll-behavior: smooth;
     background-color: #111222;
+    overflow-x: hidden;
 }
 
 body {
@@ -276,4 +277,23 @@ body {
     opacity:1;
     bottom: 40px;
     pointer-events: all;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    border-top: .3px #ffffff76 solid;
+    width: 100%;
+    min-height: 60px;
+}
+.footer ul{
+    list-style-type: none;
+    display: flex;
+}
+.footer ul  li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    margin: 30px 10px;
 }
