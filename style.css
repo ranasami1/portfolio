@@ -22,7 +22,7 @@ body {
 
 .header,
 .about,
-#skills{
+#skills {
     margin: 30px 60px;
     display: flex;
     align-items: center;
@@ -221,7 +221,8 @@ body {
         transform: translateX(-50%);
     }
 }
-.projects{
+
+.projects {
     height: auto;
     padding: 20px 0;
     display: flex;
@@ -231,14 +232,16 @@ body {
     flex-direction: column;
     gap: 30px;
 }
-#project{
+
+#project {
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-#resume{
+
+#resume {
     width: 100%;
     display: flex;
     align-items: center;
@@ -247,19 +250,22 @@ body {
     gap: 30px;
     height: 200px;
 }
-#download{
+
+#download {
     background-image: linear-gradient(45deg, #F27121, #E94057);
     height: 50px;
     width: 100px;
     border-radius: 10px;
 }
-#download a{
+
+#download a {
     text-decoration: none;
     font-weight: bolder;
     color: #111222;
 }
-.up{
-    position:fixed;
+
+.up {
+    position: fixed;
     height: 40px;
     width: 40px;
     bottom: 32px;
@@ -268,17 +274,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius:50%;
+    border-radius: 50%;
     opacity: 0;
-    transition:all .4s;
+    transition: all .4s;
     pointer-events: none;
 }
-.up.upButtom{
-    opacity:1;
+
+.up.upButtom {
+    opacity: 1;
     bottom: 40px;
     pointer-events: all;
 }
-.footer{
+
+.footer {
     display: flex;
     align-items: center;
     height: auto;
@@ -286,19 +294,22 @@ body {
     min-height: 60px;
     width: 100%;
 }
-#footer{
+
+#footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: auto;
     width: 100%;
 }
-#footer ul{
+
+#footer ul {
     list-style-type: none;
     display: flex;
     margin: 0 30px;
 }
-#footer ul  li a{
+
+#footer ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bolder;
