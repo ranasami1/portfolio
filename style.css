@@ -281,18 +281,24 @@ body {
 .footer{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     height: auto;
     border-top: .3px #ffffff76 solid;
-    width: 100%;
     min-height: 60px;
+    width: 100%;
 }
-.footer ul{
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+}
+#footer ul{
     list-style-type: none;
     display: flex;
-    margin: 0 40px;
+    margin: 0 30px;
 }
-.footer ul  li a{
+#footer ul  li a{
     text-decoration: none;
     color: #fff;
     font-weight: bolder;
